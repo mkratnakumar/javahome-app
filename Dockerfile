@@ -18,3 +18,4 @@ ADD demo-app .
 EXPOSE 80
 # CMD is runtime instruction, is excuted when we run container
 ENTRYPOINT ["apachectl","-D", "FOREGROUND"]
+HEALTHCHECK CMD curl localhost:90
